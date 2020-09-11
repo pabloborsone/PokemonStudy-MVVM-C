@@ -14,4 +14,5 @@ protocol PokemonStatsProtocol {
     var id: Int? { get set }
     var name: String? { get set }
     var weight: Int? { get set }
+    var sprites: Sprites? { get set }
 }

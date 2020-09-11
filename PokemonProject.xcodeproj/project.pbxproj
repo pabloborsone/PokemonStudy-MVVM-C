@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C1480FAD2508068600200EBD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1480FAC2508068600200EBD /* Extensions.swift */; };
 		C148FB1524F88E3E000450EB /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148FB1424F88E3E000450EB /* Pokemon.swift */; };
+		C1775CA6250ABB6E00286BB9 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1775CA5250ABB6E00286BB9 /* SF-Pro.ttf */; };
+		C1775CA8250ABB8E00286BB9 /* SF-Pro-Rounded-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1775CA7250ABB8E00286BB9 /* SF-Pro-Rounded-Ultralight.otf */; };
 		C1A1B78C24F3F2C300084A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A1B78B24F3F2C300084A05 /* AppDelegate.swift */; };
 		C1A1B78E24F3F2C300084A05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A1B78D24F3F2C300084A05 /* SceneDelegate.swift */; };
 		C1A1B79024F3F2C300084A05 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A1B78F24F3F2C300084A05 /* MainViewController.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		C1480FAC2508068600200EBD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C148FB1424F88E3E000450EB /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		C1775CA5250ABB6E00286BB9 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro.ttf"; path = "../../../../../../../../Library/Fonts/SF-Pro.ttf"; sourceTree = "<group>"; };
+		C1775CA7250ABB8E00286BB9 /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Ultralight.otf"; path = "../../../../../../../../Library/Fonts/SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
 		C1A1B78824F3F2C300084A05 /* PokemonProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A1B78B24F3F2C300084A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1A1B78D24F3F2C300084A05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 				C1480FAC2508068600200EBD /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C1775CA4250ABB5D00286BB9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C1775CA5250ABB6E00286BB9 /* SF-Pro.ttf */,
+				C1775CA7250ABB8E00286BB9 /* SF-Pro-Rounded-Ultralight.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		C1A1B77F24F3F2C300084A05 = {
@@ -123,6 +136,7 @@
 		C1E640C924FDB436002D8A53 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C1775CA4250ABB5D00286BB9 /* Fonts */,
 				C1480FAB2508066000200EBD /* Extensions */,
 				C1E640CF24FDB5C4002D8A53 /* Assets */,
 				C1E640CE24FDB5BA002D8A53 /* Protocols */,
@@ -205,7 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1A1B79824F3F2C400084A05 /* LaunchScreen.storyboard in Resources */,
+				C1775CA6250ABB6E00286BB9 /* SF-Pro.ttf in Resources */,
 				C1A1B79524F3F2C400084A05 /* Assets.xcassets in Resources */,
+				C1775CA8250ABB8E00286BB9 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
 				C1A1B79324F3F2C300084A05 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5474VK55TW;
-				INFOPLIST_FILE = StatusBarTest/Info.plist;
+				INFOPLIST_FILE = PokemonProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,7 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5474VK55TW;
-				INFOPLIST_FILE = StatusBarTest/Info.plist;
+				INFOPLIST_FILE = PokemonProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

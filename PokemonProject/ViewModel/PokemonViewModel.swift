@@ -14,6 +14,7 @@ class PokemonViewModel: PokemonStatsProtocol {
     var name: String?
     var weight: Int?
     var abilities: [Abilities]?
+    var sprites: Sprites?
     
     private let kApiPath = "https://pokeapi.co/api/v2/pokemon/"
     private var pokemon: Pokemon? = nil {
@@ -23,6 +24,7 @@ class PokemonViewModel: PokemonStatsProtocol {
             name = pokemon?.name
             weight = pokemon?.weight
             abilities = pokemon?.abilities
+            sprites = pokemon?.sprites
         }
     }
     
@@ -44,7 +46,7 @@ class PokemonViewModel: PokemonStatsProtocol {
                     completionSuccess()
                 }
             } catch {
-                completionFailure("Oopsie", "Something went wrong, we couldn't find Pokémon: \(pokemon)")
+                completionFailure("Oopsie :/", "Something went wrong, we couldn't find Pokémon: \(pokemon)")
                 print(error.localizedDescription)
             }
         }

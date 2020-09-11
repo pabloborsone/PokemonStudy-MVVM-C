@@ -15,12 +15,24 @@ extension UIViewController {
             print("You've pressed OK Button")
         }
         alertController.addAction(okAction)
-        self.present(alertController, animated: true, completion: nil)
+        DispatchQueue.main.async { [weak self] in
+            self?.present(alertController, animated: true, completion: nil)
+        }
     }
 }
 
 extension Int {
     func toString() -> String {
         return String(self)
+    }
+}
+
+extension UIImageView {
+    func makeRounded() {
+        self.layer.borderWidth = 1
+        self.layer.masksToBounds = false
+        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.cornerRadius = self.frame.height / 2
+        self.clipsToBounds = true
     }
 }

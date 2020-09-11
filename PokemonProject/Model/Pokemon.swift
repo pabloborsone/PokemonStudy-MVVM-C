@@ -8,22 +8,35 @@
 
 import Foundation
 
-internal struct Pokemon: Codable {
-    var abilities: [Abilities]
-    var baseExperience: Int
-    var id: Int
-    var name: String
-    var weight: Int
+struct Pokemon: Decodable {
+    let abilities: [Abilities]
+    let baseExperience: Int
+    let id: Int
+    let name: String
+    let weight: Int
+    let sprites: Sprites?
 }
 
-internal struct Abilities: Codable {
-    var ability: Ability
-    var isHidden: Bool
-    var slot: Int
+struct Abilities: Decodable {
+    let ability: Ability
+    let isHidden: Bool
+    let slot: Int
 }
 
-internal struct Ability: Codable {
-    var name: String
-    var url: String
+struct Ability: Decodable {
+    let name: String
+    let url: String
 }
+
+struct Sprites: Decodable {
+    let backDefault: String?
+    let backFemale: String?
+    let backShiny: String?
+    let backShinyFemale: String?
+    let frontDefault: String?
+    let frontFemale: String?
+    let frontShiny: String?
+    let frontShinyFemale: String?
+}
+
 
